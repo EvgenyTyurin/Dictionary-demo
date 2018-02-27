@@ -14,11 +14,8 @@ print("walrus in french = " + e2f["walrus"])
 # Make French/English dictionary from English/French dictionary
 f2e = {}
 word_list = list(e2f.items())
-pare_count = 0;
-while pare_count < len(word_list):
-    pare = word_list[pare_count]
-    f2e[pare[1]] = pare[0];
-    pare_count += 1    
+for pare in word_list:
+    f2e[pare[1]] = pare[0];    
 print("French\English dictionary: " + str(f2e))
 
 # Chien?
